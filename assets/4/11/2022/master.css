@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --bg-light-gray: #f8f8f8;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+}
+ul,
+ol {
+  list-style: none;
+}
+.active {
+  color: #2d2c2c;
+  border-bottom: 1px solid #0000001a;
+  padding-bottom: 5px;
+}
+/* main style */
+.container {
+  width: 100%;
+  padding: 0 15px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  /* justify-content: center; */
+}
+.card {
+}
+.col-6 {
+  width: calc(100% / 6);
+  padding: 7.5px;
+}
+header {
+  /* background-color: azure; */
+}
+.hed-cont {
+  width: 70%;
+  background-color: var(--bg-light-gray);
+  padding: 45px 0;
+  margin: 0 auto;
+}
+header .hed-cont .hed-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hed-child .logo h2 {
+  color: #303030;
+  font-size: 24px;
+  line-height: 1.38em;
+  font-weight: 400;
+}
+.hed-child ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.hed-child ul li a {
+  text-decoration: none;
+  color: #515151;
+  font-size: 14px;
+  line-height: 1.86em;
+  transition: color 0.2s ease;
+}
+.hed-child ul li a:hover {
+  color: #218fe6;
+}
+.hed-child ul li a::after {
+  content: "/";
+  font-size: 16px;
+  color: #00000080;
+  padding: 0 8px;
+}
+.hed-child ul li p {
+  color: #686868;
+  font-size: 15px;
+}
+main nav {
+  padding: 48px 0;
+}
+main nav ul {
+  display: flex;
+  justify-content: center;
+}
+main nav ul li:not(:last-child) {
+  padding-right: 29px;
+}
+main nav ul li a {
+  color: #949494;
+  transition: color 0.2s ease-in-out;
+}
+main nav ul li a:hover {
+  color: #2d2c2c;
+}
+section .card .card-details {
+  border: 1px solid #efefef;
+  border-top: none;
+  padding: 22px;
+  display: flex;
+  justify-content: space-between;
+}
+section .card .card-details .left h4 {
+  color: #333;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 1.38em;
+}
+section .card .card-details .left h4:hover {
+  color: #218fe6;
+  cursor: pointer;
+}
+section .card .card-details .left p {
+}
+section .card .card-details .right {
+}
+/* media quety  */
+@media screen {
+}
